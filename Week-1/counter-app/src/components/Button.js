@@ -1,7 +1,12 @@
 import React from "react";
 
-function Button(Add1) {
-  return <button onClick={Add1}>Add 1!</button>;
+function Button(props) {
+  return (
+    <div>
+      <button onClick={props.functions.increment}>Add 1!</button>
+      <button onClick={props.functions.decrement}>Decrement 1!</button>
+    </div>
+  );
 }
 
 export default Button;
